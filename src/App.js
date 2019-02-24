@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { practiceQuestions } from './data.js';
+import Question from './Question';
+import Header from './Header';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      questions: practiceQuestions
+    }
+  }
+
+  //methods go here
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
+        <Question questions={this.state.questions}/>
       </div>
     );
   }
