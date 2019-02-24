@@ -3,9 +3,10 @@ const practiceQuestions = [
     "id": 1,
     "question": "What does OOP stand for?",
     "correctAnswer": "Object Oriented Programming",
-    "wrongAnswers": [
+    "allAnswers": [
       "Object Oriented Poop",
       "Only Ogre Pants",
+      "Object Oriented Programming",
       "Object Orientation Painstaking"
     ],
     "category": "oop"
@@ -14,9 +15,10 @@ const practiceQuestions = [
     "id": 2,
     "question": "Which terminal command creates a new directory?",
     "correctAnswer": "mkdir",
-    "wrongAnswers": [
+    "allAnswers": [
       "mv",
       "cd",
+      "mkdir",
       "git init"
     ],
     "category": "terminal"
@@ -25,7 +27,8 @@ const practiceQuestions = [
     "id": 3,
     "question": "What is NPM, really?",
     "correctAnswer": "Node Package Manager",
-    "wrongAnswers": [
+    "allAnswers": [
+      "Node Package Manager",
       "No Problem Man",
       "New Programming Methods",
       "Nonsense Portion Manhattan"
@@ -36,19 +39,21 @@ const practiceQuestions = [
     "id": 4,
     "question": "Which one of these is NOT a reason you would you want a package.json file?",
     "correctAnswer": "It holds our javascript files",
-    "wrongAnswers": [
+    "allAnswers": [
       "It keeps track of our dependencies",
       "It lets us write npm scripts",
-      "It is the instruction manual NPM follows when we run npm install"
+      "It is the instruction manual NPM follows when we run npm install",
+      "It holds our javascript files"
     ],
     "category": "oop"
   },
   {
     "id": 5,
     "question": "What is a webpack?",
-    "correctAnswer": "a build tool that takes multiple JavaScript modules and bundles them up into a single, unified file.",
-    "wrongAnswers": [
+    "correctAnswer": "A build tool that takes multiple JavaScript modules and bundles them up into a single, unified file.",
+    "allAnswers": [
       "A backpack with webs in it",
+      "A build tool that takes multiple JavaScript modules and bundles them up into a single, unified file.",
       "A module that runs our CSS javascripts",
       "A package installer/remover"
     ],
@@ -58,7 +63,8 @@ const practiceQuestions = [
     "id": 6,
     "question": "What is an example of a string?",
     "correctAnswer": "'Bye, I'm going to Chicago!'",
-    "wrongAnswers": [
+    "allAnswers": [
+      "'Bye, I'm going to Chicago!'",
       "2",
       "true",
       "!"
@@ -69,9 +75,10 @@ const practiceQuestions = [
     "id": 7,
     "question": "What is git?",
     "correctAnswer": "A version control system",
-    "wrongAnswers": [
+    "allAnswers": [
       "A digging app",
       "Goarder Initializer Terminal",
+      "A version control system",
       "A computer stand"
     ],
     "category": "git"
@@ -80,10 +87,11 @@ const practiceQuestions = [
     "id": 8,
     "question": "What is the command to initialize git",
     "correctAnswer": "git init",
-    "wrongAnswers": [
+    "allAnswers": [
       "init git",
       "git commit",
-      "git pull"
+      "git pull",
+      "git init"
     ],
     "category": "git"
   },
@@ -91,7 +99,8 @@ const practiceQuestions = [
     "id": 9,
     "question": "Which command shows unstaged work?",
     "correctAnswer": "git status",
-    "wrongAnswers": [
+    "allAnswers": [
+      "git status",
       "git proof",
       "git commit",
       "git commit -m"
@@ -102,8 +111,9 @@ const practiceQuestions = [
     "id": 10,
     "question": "Which command prepares unstaged work to for a commit?",
     "correctAnswer": "git add",
-    "wrongAnswers": [
+    "allAnswers": [
       "git stage",
+      "git add",
       "git status",
       "git add plus"
     ],
@@ -113,9 +123,10 @@ const practiceQuestions = [
     "id": 11,
     "question": "Which command will show you the specific changes in any unstaged code?",
     "correctAnswer": "git diff",
-    "wrongAnswers": [
+    "allAnswers": [
       "git changes",
       "show diff",
+      "git diff",
       "show change"
     ],
     "category": "git"
@@ -124,10 +135,11 @@ const practiceQuestions = [
     "id": 12,
     "question": "What can git remote -v do?",
     "correctAnswer": "Show you the url of your github repository",
-    "wrongAnswers": [
+    "allAnswers": [
       "It shows you remote control git commands",
       "Set a local repository",
-      "Initialize a remote repository"
+      "Initialize a remote repository",
+      "Show you the url of your github repository",
     ],
     "category": "git"
   },
@@ -135,7 +147,8 @@ const practiceQuestions = [
     "id": 13,
     "question": "What is the command to make a new file?",
     "correctAnswer": "touch",
-    "wrongAnswers": [
+    "allAnswers": [
+      "touch",
       "mkfl",
       "new file",
       "mv"
@@ -146,8 +159,9 @@ const practiceQuestions = [
     "id": 14,
     "question": "What is the terminal command to delete a file?",
     "correctAnswer": "rm",
-    "wrongAnswers": [
+    "allAnswers": [
       "delete",
+      "rm",
       "dlt",
       "return key"
     ],
@@ -157,7 +171,8 @@ const practiceQuestions = [
     "id": 15,
     "question": "Can you use tab to autocomplete a filename?",
     "correctAnswer": "true",
-    "wrongAnswers": [
+    "allAnswers": [
+      "true",
       "false"
     ],
     "category": "terminal"
@@ -166,7 +181,8 @@ const practiceQuestions = [
     "id": 16,
     "question": "What is the terminal command to switch branches in your local repository?",
     "correctAnswer": "git checkout",
-    "wrongAnswers": [
+    "allAnswers": [
+      "git checkout",
       "git change branch",
       "git switch",
       "git [name of branch]"
@@ -176,9 +192,10 @@ const practiceQuestions = [
   {
     "id": 17,
     "question": "Which array prototype returns undefined?",
-    "correctAnswer": "for(each)",
-    "wrongAnswers": [
+    "correctAnswer": "forEach",
+    "allAnswers": [
       "map",
+      "forEach",
       "filter",
       "sort"
     ],
@@ -188,8 +205,9 @@ const practiceQuestions = [
     "id": 18,
     "question": "Which array prototype returns an array of the same length",
     "correctAnswer": "map",
-    "wrongAnswers": [
+    "allAnswers": [
       "for(each)",
+      "map",
       "slice",
       "find"
     ],
@@ -199,7 +217,8 @@ const practiceQuestions = [
     "id": 19,
     "question": "Which array prototype returns the first item matching set conditions?",
     "correctAnswer": "find",
-    "wrongAnswers": [
+    "allAnswers": [
+      "find",
       "filter",
       "sort",
       "for(each)"
@@ -210,10 +229,11 @@ const practiceQuestions = [
     "id": 20,
     "question": "Which array prototype returns only all of the items in an array matching set conditions?",
     "correctAnswer": "filter",
-    "wrongAnswers": [
+    "allAnswers": [
       "sort",
       "for(each)",
-      "map"
+      "map",
+      "filter"
     ],
     "category": "array prototypes"
   },
@@ -221,9 +241,10 @@ const practiceQuestions = [
     "id": 21,
     "question": "Which array prototype makes organizing an array from highest to lowest values easier?",
     "correctAnswer": "sort",
-    "wrongAnswers": [
+    "allAnswers": [
       "for(each)",
       "find",
+      "sort",
       "split"
     ],
     "category": "array prototypes"
@@ -232,8 +253,9 @@ const practiceQuestions = [
     "id": 22,
     "question": "Which array prototype can take in a string and return an array of each letter/space in the string?",
     "correctAnswer": "split",
-    "wrongAnswers": [
+    "allAnswers": [
       "find",
+      "split",
       "forEach",
       "splice"
     ],
@@ -243,10 +265,11 @@ const practiceQuestions = [
     "id": 23,
     "question": "Which array prototype isn't a mutator method?",
     "correctAnswer": "slice",
-    "wrongAnswers": [
+    "allAnswers": [
       "splice",
       "map",
-      "sort"
+      "sort",
+      "slice"
     ],
     "category": "array prototypes"
   },
@@ -254,8 +277,9 @@ const practiceQuestions = [
     "id": 24,
     "question": "Which array prototype method merges two arrays and returns one combined array",
     "correctAnswer": "concat",
-    "wrongAnswers": [
+    "allAnswers": [
       "filter",
+      "concat",
       "map",
       "forEach"
     ],
@@ -265,7 +289,8 @@ const practiceQuestions = [
     "id": 25,
     "question": "Which array prototype method returns a single array out of nested arrays?",
     "correctAnswer": "flat",
-    "wrongAnswers": [
+    "allAnswers": [
+      "flat",
       "filter",
       "reduce",
       "map"
@@ -276,7 +301,8 @@ const practiceQuestions = [
     "id": 26,
     "question": "Which array prototype method returns a single string of an array",
     "correctAnswer": "join",
-    "wrongAnswers": [
+    "allAnswers": [
+      "join",
       "filter",
       "forEach",
       "sort"
@@ -287,8 +313,9 @@ const practiceQuestions = [
     "id": 27,
     "question": "What values does the array prototype method 'includes' return?",
     "correctAnswer": "true or false",
-    "wrongAnswers": [
+    "allAnswers": [
       "an item in an array",
+      "true or false",
       "undefined",
       "the number of times an item appears in an array"
     ],
@@ -298,10 +325,11 @@ const practiceQuestions = [
     "id": 28,
     "question": "Which array prototype method returns the first item in an array by mutating the array?",
     "correctAnswer": "shift",
-    "wrongAnswers": [
+    "allAnswers": [
       "slice",
       "forEach",
-      "unshift"
+      "unshift",
+      "shift",
     ],
     "category": "array prototypes"
   },
@@ -309,8 +337,9 @@ const practiceQuestions = [
     "id": 29,
     "question": "Which array prototype method adds an element to the beginning of an array?",
     "correctAnswer": "unshift",
-    "wrongAnswers": [
+    "allAnswers": [
       "pop",
+      "unshift",
       "slice",
       "shift"
     ],
@@ -320,9 +349,10 @@ const practiceQuestions = [
     "id": 30,
     "question": "Which array prototype property returns the number of items in an array",
     "correctAnswer": "length",
-    "wrongAnswers": [
+    "allAnswers": [
       "map",
       "forEach",
+      "length",
       "count"
     ],
     "category": "array prototypes"

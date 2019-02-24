@@ -7,17 +7,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      questions: practiceQuestions
+      questions: practiceQuestions,
+      questionIndex: 0
     }
   }
 
-  //methods go here
+  changeQuestion = () => {
+    this.setState({questionIndex: (this.state.questionIndex + 1)})
+  }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Question questions={this.state.questions}/>
+        <Question changeQuestion={this.changeQuestion} question={this.state.questions[this.state.questionIndex]} correctAnswer={this.state.questions[this.state.questionIndex].correctAnswer}/>
       </div>
     );
   }
