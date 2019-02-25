@@ -1,12 +1,33 @@
-// .app-header {
-//   background-color: cyan;
-//   height: 100px;
-//   top: 0;
-//   // min-height: 100vh;
-//   // display: flex;
-//   // flex-direction: column;
-//   // align-items: center;
-//   // justify-content: center;
-//   // font-size: calc(10px + 2vmin);
-//   color: white;
-// }
+@font-face {
+  font-family: 'dePixel';
+  src: url('./assets/depixelhalbfett.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Reqnad';
+  src: url('./assets/ReqnadGeometrikBeta0.1-Regular.otf') format('woff2');
+}
+
+.app-header {
+  margin-top: 90px;
+  padding-bottom: 65px;
+  text-shadow: 3px 3px 15px grey;
+}
+
+#title {
+  // font-family: 'Reqnad', Fallback, sans-serif;
+  border-bottom: .63px solid grey;
+  border-right: .7px solid grey;
+  border-top: 3px solid white;
+  border-spacing: 10px;
+  border-radius: 90px;
+  background: linear-gradient(to bottom, hsla(194,72%,95%,1) 45%,hsla(237,45%,89%,1) 10%,hsla(210,65%,73%,1) 25%,hsla(211,70%,74%,1) 100%,hsla(211,70%,66%,1) 100%,hsla(239,70%,66%,.6) 100%,hsla(211,70%,74%,1) 100%,hsla(200,20%,80%,1) 100%);
+  box-shadow: 124px 54px 348px 100px rgba(255,255,255, 1), 0 10px 10px -32px rgba(255,255,255, 1);
+  padding: 40px 100px;
+}
+
+span {
+  // font-family: 'dePixel', Fallback, sans-serif;
+  font-size: 73px;
+  text-shadow: 3px 3px 5px white;
+}

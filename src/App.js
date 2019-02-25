@@ -12,6 +12,11 @@ class App extends Component {
     }
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem('questions', JSON.stringify(nextState.questions));
+    console.log('stored')
+  }
+
   changeQuestion = () => {
     let x = document.getElementById("toast")
     let y = document.getElementsByClassName("Answer")
@@ -46,7 +51,6 @@ class App extends Component {
           <div id="toast-title"></div>
           <div id="desc"></div>
           <button id="choice-1" onClick={this.changeQuestion}></button>
-          
         </div>
         <Header />
         <Question launchToast={this.launchToast} changeQuestion={this.changeQuestion} question={this.state.questions[this.state.questionIndex]} correctAnswer={this.state.questions[this.state.questionIndex].correctAnswer}/>

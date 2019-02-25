@@ -1,11 +1,13 @@
 .App {
   text-align: center;
-  background: linear-gradient(to bottom, rgba(159,216,239,1) 31%,rgba(228,245,252,1) 67%); 
+  background-image: url("./assets/background.jpg"), linear-gradient(to bottom, rgba(159,216,239,1) 31%,rgba(228,245,252,1) 67%);
+  // background-repeat: no-repeat;
+  // background: linear-gradient(to bottom, rgba(159,216,239,1) 31%,rgba(228,245,252,1) 67%); 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -13,6 +15,7 @@
 #choice-1 {
   background-color: blue;
   border-radius: 20px;
+  color: #FFF;
   font-size: 24px;
   font-weight: bolder;
   height: 50px;
@@ -56,12 +59,12 @@
 #toast.show {
     visibility: visible;
     // -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, expand 0.5s 0.5s, stay 120s
+    animation: fadein 1s, expand 0.5s 0.5s, stay 120s;
 }
 
 #toast.hide {
   visibility: hidden;
-  animation: fadeout 0.5s 4.5s
+  animation: fadeout 0.5s 4.5s;
 }
 
 @-webkit-keyframes fadein {
