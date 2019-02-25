@@ -6,35 +6,22 @@ class Question extends Component {
     super(props);
   }
 
-  getDerivedStateFromProps (props) {
-    this.setState({correctAnswer: this.props.question.correctAnswer})
-  }
-
-  checkAnswer = (value) => {
-    if(value === this.props.question.correctAnswer) {
-      console.log('correct!!')
-      this.props.changeQuestion();
-    } else {
-      console.log('sorry!!! noooooo 😞')
-    }
-  }
-
-
   render() {
-  return (
-    <div>
-      <h3>{this.props.question.question}</h3>
-      {
-        this.props.question.allAnswers.map(answer => {
-          return <Answer checkAnswer={this.checkAnswer} 
-                         answer={answer}
-                         
-                  />
-        })
-      }
-      
-    </div>
-  )
+    return (
+      <div className="question" id="Question">
+        <h3>{this.props.question.question}</h3>
+        {
+          this.props.question.allAnswers.map(answer => {
+            return <Answer checkAnswer={this.checkAnswer} 
+                           answer={answer}
+                           correct={this.props.question.correctAnswer}
+                           toastLaunch={this.props.launchToast}
+                    />
+          })
+        }
+        
+      </div>
+    )
     
   }
 }
