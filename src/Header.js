@@ -1,10 +1,11 @@
 import React from 'react';
+// import icon from './assets/favicon.jpg';
 
 export default function Header () {
 
   return (
     <header className="app-header">
-      <h1>General Trivia</h1>
+      <h1>JS Trivia <span>built with REACT </span></h1>
     </header>
   )
 }
