@@ -22,8 +22,6 @@ class Answer extends Component {
       this.setState({
         classes: 'incorrect'
       })
-      console.log(this.state.answer)
-      console.log(this.state)
       toastMssg = 'Sorry!!! noooooo 😞'
       toastDesc = 'Move on to the next question.'
       button1 = 'Move On'

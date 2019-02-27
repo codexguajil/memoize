@@ -21,7 +21,7 @@ describe("App", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('should render our toast', () => {
+  it('should render our toast and update our app`s state', () => {
 
     expect(wrapper.state('className')).toEqual('hide');
     wrapper.instance().launchToast();
