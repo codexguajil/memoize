@@ -4,20 +4,6 @@ exports[`Answer should render one of the answer choices 1`] = `
 <div
   className="Answer"
   onClick={[Function]}
-  value={
-    Object {
-      "allAnswers": Array [
-        "git changes",
-        "show diff",
-        "git diff",
-        "show change",
-      ],
-      "category": "git",
-      "correctAnswer": "git diff",
-      "id": 11,
-      "question": "Which command will show you the specific changes in any unstaged code?",
-    }
-  }
 >
   <Component />
 </div>
