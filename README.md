@@ -30,5 +30,6 @@ Run npm test from the root directory
 
 ## Preview: 
 ![Start Page](https://user-images.githubusercontent.com/20582868/53499525-c30c9380-3a65-11e9-94ea-e20504356068.gif)
+![2019-02-27 07 37 48](https://user-images.githubusercontent.com/20582868/53499525-c30c9380-3a65-11e9-94ea-e20504356068.gif)
 
 ![Game Play](https://user-images.githubusercontent.com/20582868/53498118-e97cff80-3a62-11e9-9db8-1a2201262418.gif)
