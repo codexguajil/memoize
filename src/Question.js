@@ -11,8 +11,8 @@ class Question extends Component {
       <div className="question" id="Question">
         <h3>{this.props.question.question}</h3>
         {
-          this.props.question.allAnswers.map(answer => {
-            return <Answer checkAnswer={this.checkAnswer} 
+          this.props.question.allAnswers.map((answer,i) => {
+            return <Answer key={i}
                            answer={answer}
                            correct={this.props.question.correctAnswer}
                            toastLaunch={this.props.launchToast}
@@ -22,7 +22,6 @@ class Question extends Component {
         
       </div>
     )
-    
   }
 }
 

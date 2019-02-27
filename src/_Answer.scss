@@ -13,3 +13,9 @@
 .incorrect {
   background-color: red;
 }
+
+@media only screen and (min-width: 2000px) {
+  .Answer {
+    font-size: 34px;
+  }
+}

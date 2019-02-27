@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { practiceQuestions } from './data.js';
 import Question from './Question';
 import Header from './Header';
 
@@ -7,9 +6,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      questions: practiceQuestions,
+      questions: [],
       questionIndex: 0
     }
+  }
+
+  componentDidMount() {  
+    fetch('http://memoize-datasets.herokuapp.com/api/v1/empracticequestions')
+        .then(response => response.json())
+        .then(EMpracticeQuestions => {
+          console.log(EMpracticeQuestions.EMpracticeQuestions)
+          this.setState({questions: EMpracticeQuestions.EMpracticeQuestions})
+          console.log(this.state.questions);
+      })
+        .catch(error => {throw new Error(error)})
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -46,6 +56,7 @@ class App extends Component {
 
   render() {
     return (
+      this.state.questions.length &&
       <div className="App">
         <div id="toast">
           <div id="toast-title"></div>
@@ -55,6 +66,7 @@ class App extends Component {
         <Header />
         <Question launchToast={this.launchToast} changeQuestion={this.changeQuestion} question={this.state.questions[this.state.questionIndex]} correctAnswer={this.state.questions[this.state.questionIndex].correctAnswer}/>
       </div>
+    
     );
   }
 }
