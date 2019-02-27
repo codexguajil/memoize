@@ -16,6 +16,7 @@ class Question extends Component {
                            answer={answer}
                            correct={this.props.question.correctAnswer}
                            toastLaunch={this.props.launchToast}
+                           classes={this.props.classes}
                     />
           })
         }
