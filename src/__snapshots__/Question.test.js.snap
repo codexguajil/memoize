@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question should render the question 1`] = `
+<div
+  className="question"
+  id="Question"
+>
+  <h3>
+    What does OOP stand for?
+  </h3>
+  <Answer
+    answer="Object Oriented Poop"
+    correct="Object Oriented Programming"
+    key="0"
+    toastLaunch={[MockFunction]}
+  />
+  <Answer
+    answer="Only Ogre Pants"
+    correct="Object Oriented Programming"
+    key="1"
+    toastLaunch={[MockFunction]}
+  />
+  <Answer
+    answer="Object Oriented Programming"
+    correct="Object Oriented Programming"
+    key="2"
+    toastLaunch={[MockFunction]}
+  />
+  <Answer
+    answer="Object Orientation Painstaking"
+    correct="Object Oriented Programming"
+    key="3"
+    toastLaunch={[MockFunction]}
+  />
+</div>
+`;

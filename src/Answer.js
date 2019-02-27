@@ -16,7 +16,7 @@ class Answer extends Component {
     if(e.target.innerHTML !== this.props.correct) {
       e.target.classList.add("incorrect")
       toastMssg = 'Sorry!!! noooooo 😞'
-      toastDesc = 'Try again or move on to the next question.'
+      toastDesc = 'Move on to the next question.'
       button1 = 'Move On'
       button2 = 'Try Again'
       audio = new Audio(soundfile)
